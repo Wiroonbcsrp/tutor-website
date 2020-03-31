@@ -12,7 +12,7 @@ class NoMatch extends React.PureComponent {
                         <h4>ขออภัยไม่พบข้อมูลที่ต้องการ</h4>
                         <Link to={"/"}>
                             <button className="btn btn-dark pl-5 pr-5">
-                                เข้าสู่เว็บไซต์หลัก11
+                                เข้าสู่เว็บไซต์หลัก
                             </button>
                         </Link>
                     </div>
