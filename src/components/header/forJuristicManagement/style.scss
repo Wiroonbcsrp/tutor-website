@@ -1,0 +1,58 @@
+@import "../../../index";
+
+.header-for-juristic-management {
+    background-color: #000000;
+    display: block;
+    position: relative;
+    padding: 130px 0 80px;
+    text-align: center;
+    &:after {
+        z-index: 0;
+        background-image: url("/assets/images/background/forJuristicManagement.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        content: "";
+        opacity: 0.40;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+    }
+
+    .cover {
+        position: relative;
+        z-index: 1;
+    }
+
+    h1 {
+        font-size: 40px;
+        font-weight: 600;
+        line-height: 1.53;
+        color: $white;
+        @include media-breakpoint-down(sm) {
+            font-size: 30px;
+        }
+    }
+
+    h2 {
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 1.8;
+        color: $white;
+        @include media-breakpoint-down(sm) {
+            font-size: 18px;
+        }
+    }
+
+    button {
+        font-family: $font-family;
+        font-size: 16px;
+        font-weight: 500;
+        width: 200px;
+        height: 45px;
+        border-radius: 23px;
+        box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.16);
+        z-index: 1;
+    }
+}

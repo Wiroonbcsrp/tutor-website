@@ -1,0 +1,99 @@
+@import '../../../index';
+
+.video-detail {
+    padding: 160px 0 0;
+    @include media-breakpoint-down(sm) {
+        padding: 100px 0 0;
+        h6 {
+            font-size: 18px ;
+        }
+    }
+
+    h1 {
+        font-size: 28px;
+        font-weight: 600;
+        line-height: 1.54;
+        margin: 0;
+    }
+
+    p {
+        font-size: 16px;
+        line-height: 1.63;
+    }
+
+    .description {
+        margin-left: 5%;
+
+        @include media-breakpoint-down(sm) {
+            margin-left: 0;
+        }
+
+        p.type {
+            font-size: 16px;
+            line-height: 1.63;
+            color: #676767;
+
+            strong {
+                color: $black;
+                font-weight: 500;
+            }
+
+            a {
+                color: #676767
+            }
+        }
+
+        .time {
+            margin-bottom: 5%;
+            flex-direction: row;
+            display: flex;
+            align-items: center;
+
+            p {
+                color: #676767;
+                margin: 0;
+                font-size: 12px;
+            }
+
+            img {
+                margin-right: 3%;
+            }
+        }
+    }
+
+    .group-video {
+        margin-top: 1%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        a {
+            text-decoration: none;
+        }
+
+        .video {
+            margin: 0 5% 10% 0;
+
+            h6 {
+                margin-top: 3%;
+                color: $black;
+            }
+
+            .time {
+                flex-direction: row;
+                display: flex;
+                align-items: center;
+
+                p {
+                    color: #676767;
+                    margin: 0;
+                    font-size: 12px;
+                }
+
+                img {
+                    margin-right: 3%;
+                }
+            }
+        }
+    }
+}

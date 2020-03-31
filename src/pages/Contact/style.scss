@@ -1,0 +1,77 @@
+@import "../../index";
+
+.background-contact {
+    background: url("/assets/images/home/header-background.svg");
+    background-position: 50% 100%;
+    background-size: 150%;
+    background-repeat: no-repeat;
+    @include media-breakpoint-down(sm) {
+        background: none;
+    }
+}
+.contact {
+    margin: 4% 0;
+    h1 {
+        font-size: 40px;
+        font-weight: 600;
+        line-height: 1.53;
+        @include media-breakpoint-down(sm) {
+            font-size: 30px;
+        }
+    }
+
+    h2 {
+        font-size: 28px;
+        font-weight: 600;
+        line-height: 1.54;
+        margin: 0;
+        @include media-breakpoint-down(sm) {
+            font-size: 20px;
+        }
+    }
+
+    h3 {
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 1.8;
+        margin: 0;
+        @include media-breakpoint-down(sm) {
+            font-size: 18px;
+        }
+    }
+
+    h6 {
+        font-family: $font-family;
+        font-weight: 100;
+        font-size: 16px;
+        margin: 0;
+    }
+
+    p {
+        font-family: $font-family;
+        font-size: 16px;
+        line-height: 1.5;
+        margin: 2% 0;
+    }
+
+    .phone {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        img {
+            margin-right: 2%;
+        }
+    }
+
+    .social {
+        border-radius: 50%;
+        margin-right: 2%;
+        margin-top: 3%;
+    }
+
+    .company {
+        padding: 5% 0;
+    }
+
+}

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="13" height="10" viewBox="0 0 13 10">
+    <defs>
+        <style>
+            .cls-1{fill:#1390dd}
+        </style>
+    </defs>
+    <path id="Path_201" d="M222.276 268.97l-4.333-4.25a.775.775 0 0 0-1.081 0 .739.739 0 0 0 0 1.06l3.028 2.97h-9.624a.75.75 0 1 0 0 1.5h9.624l-3.028 2.97a.739.739 0 0 0 0 1.06.775.775 0 0 0 1.081 0l4.333-4.25a.739.739 0 0 0 0-1.06z" class="cls-1" data-name="Path 201" transform="translate(-209.5 -264.5)"/>
+</svg>

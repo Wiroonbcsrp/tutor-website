@@ -1,0 +1,164 @@
+@import "../../index";
+
+.customer {
+    h1 {
+        font-size: 40px;
+        font-weight: 600;
+        line-height: 1.53;
+        @include media-breakpoint-down(sm) {
+            font-size: 30px;
+        }
+    }
+
+    h2 {
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 1.67;
+        @include media-breakpoint-down(sm) {
+            font-size: 18px;
+        }
+    }
+
+    h3 {
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 1.67;
+    }
+
+    h4 {
+        font-family: $font-family;
+        font-size: 14px;
+        font-weight: 100;
+        line-height: 1.5;
+    }
+
+    p {
+        font-size: 16px;
+        line-height: 1.75;
+    }
+
+    .review-customer {
+        overflow: hidden;
+
+        .slide-arrow {
+            .slick-prev, .slick-next {
+                background-color: $black;
+                width: 50px;
+                height: 50px;
+                padding: 16.7px;
+                margin-right: 9px;
+                border-radius: 50%;
+                cursor: pointer;
+            }
+        }
+
+        .feedback {
+
+            .feedback-slide {
+                background: #FFFFFF;
+                box-shadow: 0 0 10px #CCCCCC;
+                border-radius: 10px;
+                overflow: hidden;
+                margin: 10px 10px 10px 20px;
+                position: relative;
+                left: -20px;
+                opacity: 0.2;
+                z-index: -1;
+                height: 310px;
+                width: 50vw;
+                min-width: 550px;
+                img {
+                    float: left;
+                    margin-right: 20px;
+                    max-height: 310px;
+                }
+                .comment {
+                    h2 {
+                        margin: 20px 0 20px 0;
+                        padding: 0;
+                        color: #28292a;
+                        font-size: 20px;
+                        line-height: 20px;
+                        &:before {
+                            content: "";
+                            width: 40px;
+                            height: 40px;
+                            background-image: url("/assets/images/home/double-quote-start.png");
+                            background-size: 90%;
+                            background-repeat: no-repeat;
+                            display: inline-block;
+                            margin-top: 10px;
+                            margin-right: 2px;
+                            margin-bottom: -20px;
+                        }
+
+                        &:after {
+                            content: "";
+                            width: 40px;
+                            height: 40px;
+                            background-image: url("/assets/images/home/double-quote-end.png");
+                            background-size: 90%;
+                            background-repeat: no-repeat;
+                            display: inline-block;
+                            margin-top: 20px;
+                            margin-bottom: -20px;
+                            margin-left: 5px;
+                        }
+                    }
+                }
+                &.slick-active {
+                    opacity: 1;
+                }
+            }
+        }
+
+        .partner-and-customer {
+            margin: 5% 0;
+
+            .project-management {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                margin: 2% auto 7%;
+
+                & > div {
+                    margin: 0 auto;
+                }
+            }
+            .border-icon {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 8%;
+                border: 1px solid $gray-500;
+                padding: 1%;
+                margin: 1%;
+            }
+        }
+
+        .filter {
+            ul {
+                margin: 20px 0 0 0;
+                padding: 0;
+                float: left;
+                height: 150px;
+                li {
+                    list-style: none;
+                    margin: 0 0 10px 0;
+                    padding: 0;
+                    cursor: pointer;
+                    font-family: $font-family;
+                    font-size: 16px;
+                    float: left;
+                    clear: both;
+                    &:hover, &.active {
+                        font-weight: bold;
+                        color: #1390dd;
+                        border-bottom: 2px solid #1390dd;
+                    }
+                }
+            }
+        }
+
+    }
+}

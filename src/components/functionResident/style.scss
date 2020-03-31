@@ -1,0 +1,31 @@
+@import "../../index";
+
+.function-resident {
+    background-color: #f2f3f5;
+    padding: 5% 0;
+
+    .description {
+        display: flex;
+        margin: 10% 9% 20%;
+
+        .icon {
+            margin-right: 5%;
+        }
+        .content {
+            font-family: $font-family;
+            color: #28292a;
+        }
+
+        img {
+            position: relative;
+            top: 20px;
+        }
+    }
+
+    @include media-breakpoint-up(md) {
+        img {
+            top: 0;
+        }
+    }
+
+}

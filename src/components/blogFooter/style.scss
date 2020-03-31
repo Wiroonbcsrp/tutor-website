@@ -1,0 +1,49 @@
+@import "../../index";
+
+.blog-footer {
+    padding: 3% 0 5%;
+
+    a {
+        color: $black;
+    }
+
+    img {
+        margin-bottom: 3%;
+    }
+
+    .group-description {
+        margin-top: 5%;
+
+        .description {
+            display: block;
+        }
+
+        @include media-breakpoint-down(md) {
+            .description {
+                display: none;
+            }
+        }
+    }
+}
+
+.blog-with-tag {
+    @extend .blog-footer;
+
+    h2 {
+        font-size: 28px;
+        font-weight: 600;
+        line-height: 1.54;
+    }
+
+    h6 {
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 1.5;
+    }
+
+    p {
+        font-size: 14px;
+        line-height: 1.86;
+        color: #676767;
+    }
+}

@@ -1,0 +1,24 @@
+@import "../../../index";
+
+.navigation-about {
+    box-shadow: 0 1px 1px #f2f3f5;
+    .navigation-wrapper {
+        text-align: center;
+        a {
+            display: inline-block;
+            font-weight: 500;
+            font-family: $font-family;
+            color: #676767;
+            font-size: 16px;
+            text-decoration: none;
+            height: 60px;
+            padding: 0 3%;
+            line-height: 60px;
+            white-space: nowrap;
+            &:hover, &.active {
+                color: $blue;
+                border-bottom: 4px solid $blue;
+            }
+        }
+    }
+}

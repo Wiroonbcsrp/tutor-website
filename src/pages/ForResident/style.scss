@@ -1,0 +1,99 @@
+@import "../../index";
+
+.for-resident {
+    .more {display: none}
+    h1 {
+        font-size: 28px;
+        font-weight: 600;
+        line-height: 1.54;
+    }
+
+    h2 {
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    h3 {
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 1.5;
+        margin-top: 3%;
+    }
+
+    h6 {
+        font-size: 16px;
+        font-weight: 500;
+        margin: 0;
+    }
+
+    p {
+        font-size: 16px;
+        line-height: 1.63;
+        color: #676767;
+    }
+
+    .box {
+        padding: 5% 0;
+    }
+
+    .box-margin-bottom {
+        padding: 0 0 5%;
+    }
+
+    @include media-breakpoint-down(sm) {
+        .box-delete-margin {
+            padding: 5% 0;
+        }
+    }
+
+    span.read-more {
+        display: block;
+        color: $blue;
+        cursor: pointer;
+
+        &:hover {
+            color: $blue;
+        }
+
+        &::after {
+            position: relative;
+            top: 12px;
+            left: 0;
+            float: right;
+            content: " ";
+            width: 75%;
+            height: 1px;
+            background-color: $gray-300;
+        }
+    }
+
+    @include media-breakpoint-down(sm) {
+        span.read-more {
+            display: block;
+            margin-bottom: 5%;
+
+            &::after {
+                background-color: transparent;
+            }
+        }
+    }
+
+    .corrupt {
+        .text-margin {
+            margin-top: 12%;
+        }
+
+        @include media-breakpoint-down(sm) {
+            .text-margin {
+                margin-top: 0;
+            }
+        }
+    }
+
+    .iot {
+        img {
+            width: 90%;
+        }
+    }
+}
+

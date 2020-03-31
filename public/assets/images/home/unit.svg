@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="42.794" height="49" viewBox="0 0 42.794 49">
+    <defs>
+        <style>
+            .cls-1{fill:#212a34}.cls-2{fill:#fff}
+        </style>
+    </defs>
+    <g id="Group_227" data-name="Group 227" transform="translate(-956 -442)">
+        <path id="Rectangle_131" d="M0 0h29v39H0z" class="cls-1" data-name="Rectangle 131" transform="translate(962.773 442)"/>
+        <g id="Group_224" data-name="Group 224" transform="translate(963.092 442)">
+            <path id="Path_583" d="M988.921 491L967 480.684V442l21.921 10.316z" class="cls-2" data-name="Path 583" transform="translate(-967 -442)"/>
+            <path id="Path_584" d="M968.289 444.032l19.342 9.1v35.834l-19.342-9.1v-35.834M967 442v38.684L988.921 491v-38.684L967 442z" class="cls-1" data-name="Path 584" transform="translate(-967 -442)"/>
+        </g>
+        <ellipse id="Ellipse_67" cx="1.209" cy="1.934" class="cls-1" data-name="Ellipse 67" rx="1.209" ry="1.934" transform="translate(978.324 467.145)"/>
+        <g id="Group_225" data-name="Group 225" transform="translate(956 470.368)">
+            <path id="Line_19" d="M7.333 0H0" class="cls-2" data-name="Line 19" transform="translate(0 .645)"/>
+            <path id="Rectangle_132" d="M0 0h7.333v1.289H0z" class="cls-1" data-name="Rectangle 132"/>
+        </g>
+        <g id="Group_226" data-name="Group 226" transform="translate(991.461 470.368)">
+            <path id="Line_20" d="M7.333 0H0" class="cls-2" data-name="Line 20" transform="translate(0 .645)"/>
+            <path id="Rectangle_133" d="M0 0h7.333v1.289H0z" class="cls-1" data-name="Rectangle 133"/>
+        </g>
+    </g>
+</svg>

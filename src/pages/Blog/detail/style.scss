@@ -1,0 +1,179 @@
+@import '../../../index';
+
+.blog-detail {
+    padding: 8% 0;
+
+    h1 {
+        font-size: 40px;
+        font-weight: 600;
+        line-height: 1.3;
+        @include media-breakpoint-down(sm) {
+            font-size: 30px;
+        }
+    }
+
+    h3 {
+        font-size: 28px;
+        font-weight: 600;
+        line-height: 1.54;
+        @include media-breakpoint-down(sm) {
+            font-size: 20px;
+        }
+    }
+
+    h4 {
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 1.5;
+    }
+
+    h5 {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 2.86;
+        margin: 0;
+
+        strong {
+            color: $blue;
+        }
+    }
+
+    p {
+        font-size: 16px;
+        line-height: 1.63;
+        &.type {
+            color: #676767;
+        }
+        strong {
+            color: $black;
+            font-weight: 500;
+        }
+        a {
+            color: #676767;
+        }
+    }
+
+    .search {
+        display: block;
+
+        .search-input {
+            background: url("/assets/images/faq/search.svg") no-repeat 15px 7px;
+        }
+
+        input {
+            font-family: $font-family;
+            font-size: 14px;
+            border-radius: 120px;
+            margin-bottom: 10%;
+        }
+
+        a {
+            color: $black;
+            text-decoration: none;
+        }
+    }
+
+    .description {
+        margin: 2% 0 4%;
+    }
+
+    .tag-share {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        .tag {
+            display: inline-flex;
+            flex-direction: row;
+            align-items: center;
+            width: 50%;
+
+            p {
+                font-size: 12px;
+                color: #676767;
+                background-color: #f2f3f5;
+                width: fit-content;
+                padding: 0.5% 2%;
+                margin: 0 1% 0 0;
+            }
+        }
+
+        .share {
+            width: 50%;
+
+            h4 {
+                text-align: right;
+                font-size: 16px;
+                float: right;
+                margin: 0;
+                padding: 4px 4px 0 0;
+            }
+
+            .facebook {
+                background-color: #4267b2;
+                border-radius: 3px;
+                float: right;
+                padding: 2% 3%;
+                margin-left: 1%;
+
+                h5 {
+                    color: $white;
+                    float: left;
+                    line-height: 20px;
+                }
+
+                img {
+                    display: block;
+                    float: left;
+                    margin-right: 4px;
+                }
+            }
+
+            .line {
+                @extend .facebook;
+                background-color: #00b900;
+                margin-left: 1%;
+            }
+        }
+
+        .share-mobile {
+            display: none;
+            @extend .share;
+        }
+    }
+
+    @include media-breakpoint-down(md) {
+        padding: 15% 5%;
+        h1 {
+            font-size: 24px;
+            font-weight: 600;
+        }
+        p.date {
+            font-size: 14px;
+            color: #676767;
+        }
+
+        .tag-share {
+            .tag {
+                width: 100%;
+            }
+
+            .share-mobile {
+                display: flex;
+                flex-direction: row;
+
+                .facebook {
+                    display: flex;
+                    flex-direction: row;
+                    margin-top: 10%;
+                    padding: 4% 10% 4% 4%;
+                    margin-right: 3%;
+                }
+                .line {
+                    @extend .facebook;
+                }
+            }
+        }
+    }
+}

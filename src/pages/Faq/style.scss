@@ -1,0 +1,164 @@
+@import "../../index";
+
+.faq {
+    background-image: url("/assets/images/home/header-background.svg");
+    background-repeat: no-repeat;
+    overflow: hidden;
+    padding-top: 140px;
+    padding-bottom: 150px;
+    background-size: 160% auto;
+    background-position: center -110px;
+
+    @include media-breakpoint-up(sm) {
+        background-position: center -250px;
+    }
+
+    @include media-breakpoint-up(md) {
+        padding-top: 190px;
+        background-position: center -250px;
+    }
+
+    @include media-breakpoint-up(lg) {
+        background-position: center -350px;
+        padding-top: 190px;
+    }
+
+    @include media-breakpoint-up(xl) {
+        background-position: center -600px;
+        padding-top: 190px;
+    }
+
+    h1 {
+        font-size: 40px;
+        font-weight: 600;
+        line-height: 1.53;
+    }
+
+    h2 {
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 1.5;
+        color: $blue;
+    }
+
+    button {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.5;
+        font-family: $font-family;
+    }
+
+    @include media-breakpoint-down(sm) {
+        h1 {
+            font-size: 28px;
+            font-weight: 600;
+            line-height: 1.54;
+        }
+
+        h2 {
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 1.75;
+        }
+    }
+
+    .search {
+        display: flex;
+        flex-direction: row;
+        margin: 5% 0;
+
+        .search-input {
+            background-image: url("/assets/images/faq/search.svg");
+            background-repeat: no-repeat;
+            background-position: 12px 8px;
+            font-family: $font-family;
+            font-size: 14px;
+            border-radius: 120px;
+            //width: 70%;
+            padding: 10px 10px 10px 50px;
+            margin: 0 auto;
+            height: 40px;
+        }
+    }
+
+    .group-topic {
+        .topic {
+            border-left: 4px solid $blue;
+            padding-left: 15px;
+            margin-bottom: 20px;
+            margin-top: 60px;
+        }
+
+        .question {
+
+            .card {
+                background-color: #f8f8f8;
+                border: none;
+                border-radius: 5px;
+                margin-bottom: 15px;
+                cursor: pointer;
+
+                .card-header {
+                    background-color: transparent;
+                    border: none;
+                }
+
+                .card-body {
+                    padding: 10px 1.25rem 1.25rem;
+                    font-size: 14px;
+                    line-height: 1.8;
+                    width: 95%;
+                }
+            }
+
+            button {
+                padding: 0;
+                width: 100%;
+                text-align: left;
+                text-decoration: none;
+                span {
+                    width: 95%;
+                    display: inline-block;
+                    color: $blue;
+                }
+            }
+
+            .plus {
+                display: none;
+            }
+
+            .minus {
+                display: block;
+                margin-top: 9px;
+            }
+
+            .background-collapse {
+                background-color: #FFFFFF;
+                border: none;
+                box-shadow: 0 0 2px #cccccc;
+                .card-header button {
+                    color: $blue;
+                }
+            }
+
+            .collapsed {
+                color: $black;
+
+                button {
+                    span {
+                        color: $black;
+                    }
+                }
+
+                .plus {
+                    display: block;
+                }
+
+                .minus {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+

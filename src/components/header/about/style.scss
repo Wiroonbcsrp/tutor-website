@@ -1,0 +1,43 @@
+@import "../../../index";
+
+.header-about {
+    display: block;
+    position: relative;
+    padding: 190px 0 140px;
+    text-align: center;
+    &:after {
+        z-index: 0;
+        background-image: url("/assets/images/about/background-header.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        content: "";
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+    }
+
+    .cover {
+        position: relative;
+        z-index: 1;
+    }
+
+    h1 {
+        font-size: 40px;
+        font-weight: 600;
+        line-height: 1.53;
+        @include media-breakpoint-down(sm) {
+            font-size: 30px;
+        }
+    }
+
+    h2 {
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 1.8;
+        @include media-breakpoint-down(sm) {
+            font-size: 18px;
+        }
+    }
+}
