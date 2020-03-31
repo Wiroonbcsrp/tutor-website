@@ -47,7 +47,7 @@
 		white-space: nowrap;
 
 		a {
-			font-size: 18px;
+			font-size: 16px;
 			font-weight: 500;
 			color: $black;
 		}
@@ -60,11 +60,31 @@
 		top: .8em;
 	}
 
+	.dropdown-menu {
+		right: 0 !important;
+		left: unset;
+		width: 115%;
+		min-width: 18rem;
+		@include media-breakpoint-down(md) {
+			border: 0;
+		}
+	}
+
 	.dropdown-submenu .dropdown-menu {
 		top: 0;
-		left: -150%;
-		margin-left: .1rem;
-		margin-right: .1rem;
+		margin-right: 18.1rem;
+		@media screen and (min-width: 1800px) and (max-width: 2000px) {
+			margin-right: -20.7rem;
+		}
+		@include media-breakpoint-down(md) {
+			position: relative;
+			padding: 3% 0;
+			margin-left: 0.1rem;
+			margin-right: 0;
+			border: 0;
+			left: 5%;
+			background-color: transparent;
+		}
 	}
 
 	.logo {

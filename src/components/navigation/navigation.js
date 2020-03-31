@@ -156,6 +156,13 @@ class Navigation extends React.Component {
                                                 </li>
                                             </ul>
                                         </li>
+                                        <li className="nav-item">
+                                            <Link to={"/register"} className="nav-link text-right">
+                                                <button className="btn btn-primary registration">
+                                                    สมัครสมาชิก
+                                                </button>
+                                            </Link>
+                                        </li>
                                     </ul>
                                 </div>
                             </nav>
